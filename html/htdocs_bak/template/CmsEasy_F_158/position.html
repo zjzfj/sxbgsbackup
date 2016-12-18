@@ -1,0 +1,46 @@
+
+<div class="container ">
+<nav class="sub_menu">
+<?php
+if(front::get('case') == 'area'){
+?>
+<?php
+}elseif($topid==0){
+?>
+<?php
+}elseif(front::get('case') == 'announ'){
+?>
+<?php
+}elseif(front::get('case') == 'guestbook'){
+?>
+<?php
+}elseif(front::get('case') == 'comment'){
+?>
+<?php
+}elseif(front::get('case') == 'type'){
+?>
+<?php
+}elseif(front::get('case') == 'special'){
+?>
+<?php
+}elseif(front::get('case') == 'tag'){
+?>
+<?php
+}elseif(front::get('case') == 'mailsubscription'){
+?>
+<?php
+}else{
+?>
+<ol class="breadcrumb"><span class="glyphicon glyphicon-list"></span>
+<li><a href="{$base_url}/">{lang(homepage)}</a></li>
+{loop position($catid) $t}
+<li><a title="{$t['name']}" href="{$t.url}">{$t['name']}</a></li>
+{/loop}
+</ol>
+
+<?php
+}
+?>
+</nav>
+</div>
+<!--/sub_menu-->

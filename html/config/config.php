@@ -530,7 +530,7 @@
 //}
 
 //template-模板设置{
-'template_dir'=>'default_bootstrap',
+'template_dir'=>'CmsEasy_V_364',
 
 //前台模板[默认default]
 
@@ -796,11 +796,11 @@
 
 
 //slide-幻灯片设置{
-'slide_width'=>'990',
+'slide_width'=>'840',
 
 //幻灯宽度[<span class="hotspot" onmouseover="tooltip.show('设置幻灯片的显示宽度！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
-'slide_height'=>'750',
+'slide_height'=>'240',
 
 //幻灯高度[<span class="hotspot" onmouseover="tooltip.show('设置幻灯片的显示高度！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
@@ -842,7 +842,7 @@
 
 //图片1地址[<span class="hotspot" onmouseover="tooltip.show('上传幻灯中的图片！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]=>image
 
-'slide_pic1_title'=>'响应式网站模板，不同终端，同样精彩 ',
+'slide_pic1_title'=>'响应式网站模板，不同终端，同样精彩',
 
 //图片1标题[<span class="hotspot" onmouseover="tooltip.show('填写幻灯中的标题！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
