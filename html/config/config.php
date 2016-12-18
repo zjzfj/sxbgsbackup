@@ -16,11 +16,11 @@
 
 //网站地址[<span class="hotspot" onmouseover="tooltip.show('http://起始并以 / 结束！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
-'sitename'=>'CmsEasy 企业营销型管理系统', 
+'sitename'=>'山西孟县报国寺官网', 
 
 //站点名称[<span class="hotspot" onmouseover="tooltip.show('请填写网站简称，主要用于页底说明！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
-'fullname'=>'cmseasy免费企业网站程序是国内首款免费营销型的企业网站系统', 
+'fullname'=>'山西孟县报国寺官网', 
 
 //网站名称[<span class="hotspot" onmouseover="tooltip.show('网页标题处显示，可结合关键词使用！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
@@ -39,7 +39,7 @@
 
 //网站关键字[<span class="hotspot" onmouseover="tooltip.show('网站关键词，用于优化网站排名，多个关键词请用","间隔！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
-'site_description'=>'cmseasy是一款基于 PHP+Mysql 架构的网站内容管理系统，也是一个 PHP 开发平台。 采用模块化方式开发，功能易用便于扩展，可面向大中型站点提供重量级网站建设解决方案。',
+'site_description'=>'',
 
 //网站描述[<span class="hotspot" onmouseover="tooltip.show('网站网页描述内容，可简写与网站相关的简介！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
@@ -111,7 +111,7 @@
 
 //语言设置[<span class="hotspot" onmouseover="tooltip.show('网站模板语言选项，需结合网站后台输入内容显示！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]=>cn/中文/en/英文/jp/日文/de/德文/sk/韩文/user/自定义
 
-'pc_style_color'=>'6', 
+'pc_style_color'=>'3', 
 
 //网站整体颜色[<span class="hotspot" onmouseover="tooltip.show('只在PC模板支持换色时有效！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]=>0/无/1/红/2/橙/3/黄/4/绿/5/青/6/蓝/7/紫/8/黑/9/白
 
@@ -328,7 +328,7 @@
 //后台登录IP验证开关[<span class="hotspot" onmouseover="tooltip.show('打开或者关闭IP验证功能');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]=>0/关/1/开
 
 
-'verifycode'=>'2', 
+'verifycode'=>'1', 
 
 //验证码开关[<span class="hotspot" onmouseover="tooltip.show('设置网站是否启用验证码！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]=>0/关/1/字符/2/拼图
 
@@ -558,7 +558,7 @@
 //}
 
 //enlarge-网站客服信息{
-'ifonserver'=>'1', 
+'ifonserver'=>'0', 
 
 //开启前台客服[<span class="hotspot" onmouseover="tooltip.show('设置是否在网站中显示悬浮客服侧栏！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]=>1/开启/0/关闭
 
@@ -1009,11 +1009,11 @@
 
 //图片1地址[<span class="hotspot" onmouseover="tooltip.show('上传幻灯中的图片！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]=>image
 
-'cslide_pic1_title'=>'CmsEasy3.0助力企业网络营销',
+'cslide_pic1_title'=>'助力企业网络营销',
 
 //图片1标题[<span class="hotspot" onmouseover="tooltip.show('填写幻灯中的标题！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
-'cslide_pic1_url'=>'http://www.cmseasy.cn',
+'cslide_pic1_url'=>'www.shanxibaoguosi.com',
 
 //图片1链接地址[<span class="hotspot" onmouseover="tooltip.show('注意链接中的&要用%26替换！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
@@ -1021,11 +1021,11 @@
 
 //图片2地址[<span class="hotspot" onmouseover="tooltip.show('上传幻灯中的图片！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]=>image
 
-'cslide_pic2_title'=>'CmsEasy服务/售后/程序多重升级', 
+'cslide_pic2_title'=>'服务/售后/程序多重升级', 
 
 //图片2标题[<span class="hotspot" onmouseover="tooltip.show('填写幻灯中的标题！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
-'cslide_pic2_url'=>'http://www.cmseasy.cn', 
+'cslide_pic2_url'=>'www.shanxibaoguosi.com', 
 
 //图片2链接地址[<span class="hotspot" onmouseover="tooltip.show('注意链接中的&要用%26替换！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
@@ -1033,11 +1033,11 @@
 
 //图片3地址[<span class="hotspot" onmouseover="tooltip.show('上传幻灯中的图片！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]=>image
 
-'cslide_pic3_title'=>'欢迎网建公司及工作室参与CmsEasy官方分享计划',
+'cslide_pic3_title'=>'欢迎网建公司及工作室参与官方分享计划',
 
 //图片3标题[<span class="hotspot" onmouseover="tooltip.show('填写幻灯中的标题！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
-'cslide_pic3_url'=>'http://www.cmseasy.cn',
+'cslide_pic3_url'=>'www.shanxibaoguosi.com',
 
 //图片3链接地址[<span class="hotspot" onmouseover="tooltip.show('注意链接中的&要用%26替换！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
@@ -1045,9 +1045,9 @@
 
 //图片4地址[<span class="hotspot" onmouseover="tooltip.show('上传幻灯中的图片！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]=>image
 
-'cslide_pic4_title'=>'免费下载CmsEasy,还有机会获取商业授权！', //图片4标题[<span class="hotspot" onmouseover="tooltip.show('填写幻灯中的标题！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
+'cslide_pic4_title'=>'授权！', //图片4标题[<span class="hotspot" onmouseover="tooltip.show('填写幻灯中的标题！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
-'cslide_pic4_url'=>'http://www.cmseasy.cn',
+'cslide_pic4_url'=>'www.shanxibaoguosi.com',
 
 //图片4链接地址[<span class="hotspot" onmouseover="tooltip.show('注意链接中的&要用%26替换！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
@@ -1055,11 +1055,11 @@
 
 //图片5地址[<span class="hotspot" onmouseover="tooltip.show('上传幻灯中的图片！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]=>image
 
-'cslide_pic5_title'=>'CmsEasy3.0助力企业网络营销', 
+'cslide_pic5_title'=>'助力企业网络营销', 
 
 //图片5标题[<span class="hotspot" onmouseover="tooltip.show('填写幻灯中的标题！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
-'cslide_pic5_url'=>'http://www.cmseasy.cn',
+'cslide_pic5_url'=>'www.shanxibaoguosi.com',
 
 //图片5链接地址[<span class="hotspot" onmouseover="tooltip.show('注意链接中的&要用%26替换！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
@@ -1108,7 +1108,7 @@
 
 //图片3标题[<span class="hotspot" onmouseover="tooltip.show('填写幻灯中的标题！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
-'cslide_pic3_url'=>'http://www.cmseasy.cn',
+'cslide_pic3_url'=>'www.shanxibaoguosi.com',
 
 //图片3链接地址[<span class="hotspot" onmouseover="tooltip.show('注意链接中的&要用%26替换！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
