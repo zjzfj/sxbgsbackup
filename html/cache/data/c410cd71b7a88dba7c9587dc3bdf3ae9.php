@@ -8,7 +8,7 @@
     'tag' => '',
     'username' => 'admin',
     'userid' => '1',
-    'view' => '0',
+    'view' => '1',
     'color' => '',
     'strong' => '0',
     'toppost' => '0',

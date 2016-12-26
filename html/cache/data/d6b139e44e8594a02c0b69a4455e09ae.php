@@ -8,7 +8,7 @@
     'tag' => '',
     'username' => 'cmseasy',
     'userid' => '127',
-    'view' => '230',
+    'view' => '231',
     'color' => '',
     'strong' => '0',
     'toppost' => '0',
