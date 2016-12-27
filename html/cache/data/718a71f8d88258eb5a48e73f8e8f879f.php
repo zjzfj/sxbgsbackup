@@ -435,7 +435,7 @@
     'tag' => '',
     'username' => 'cmseasy',
     'userid' => '127',
-    'view' => '3',
+    'view' => '4',
     'color' => '',
     'strong' => '0',
     'toppost' => '0',

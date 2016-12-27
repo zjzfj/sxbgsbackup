@@ -179,7 +179,7 @@
     'tag' => '',
     'username' => 'admin',
     'userid' => '1',
-    'view' => '1',
+    'view' => '4',
     'color' => '',
     'strong' => '0',
     'toppost' => '0',
