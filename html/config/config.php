@@ -24,7 +24,7 @@
 
 //网站名称[<span class="hotspot" onmouseover="tooltip.show('网页标题处显示，可结合关键词使用！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
-'site_mobile'=>'18888888888', 
+'site_mobile'=>'15383635830', 
 
 //手机号码[<span class="hotspot" onmouseover="tooltip.show('管理员手机号码,可以开通用户动作短信提醒！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
@@ -35,7 +35,7 @@
 
 //ICP备案号[<span class="hotspot" onmouseover="tooltip.show('前台显示ICP备案号码！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
-'site_keyword'=>'企业网站程序,企业网站源码,cmseasy',
+'site_keyword'=>'盂县报国寺',
 
 //网站关键字[<span class="hotspot" onmouseover="tooltip.show('网站关键词，用于优化网站排名，多个关键词请用","间隔！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
@@ -44,7 +44,7 @@
 //网站描述[<span class="hotspot" onmouseover="tooltip.show('网站网页描述内容，可简写与网站相关的简介！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
 
-'site_logo'=>'/images/logo.png',
+'site_logo'=>'/upload/images/201612/14829064320653.jpg',
 
 //网站logo[<span class="hotspot" onmouseover="tooltip.show('点击绿色加号，上传网站logo！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]=>image
 
@@ -63,7 +63,7 @@
 //微信公共号图片[<span class="hotspot" onmouseover="tooltip.show('当图片列表页无缩略图时用于替换显示！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]=>image
 
 
-'flash_url'=>'http://player.youku.com/player.php/Type/Folder/Fid/19033149/Ob/1/sid/XNTI1NTk4OTAw/v.swf',
+'flash_url'=>'',
 
 //Flash视频地址[<span class="hotspot" onmouseover="tooltip.show('复制优酷视频中的flash地址！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]=>image
 
@@ -73,32 +73,32 @@
 
 
 
-'address'=>'某某股份有限公司',
+'address'=>'山西盂县北山神（离高铁阳泉北站约500m）',
 
 //联系地址[<span class="hotspot" onmouseover="tooltip.show('填写联系地址！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
-'tel'=>'888-88888888',
+'tel'=>'15383635830',
 
 //联系电话[<span class="hotspot" onmouseover="tooltip.show('填写联系电话！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
-'mobile'=>'88888888888',
+'mobile'=>'15383635830',
 
 //移动电话[<span class="hotspot" onmouseover="tooltip.show('填写移动电话号码！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
-'fax'=>'888-88888888',
+'fax'=>'15383635830',
 
 //传真[<span class="hotspot" onmouseover="tooltip.show('填写传真号码！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
-'email'=>'admin@admin.com',
+'email'=>'sxbaoguosi@163.com',
 
 //邮箱[<span class="hotspot" onmouseover="tooltip.show('填写联系邮箱！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
-'complaint_email'=>'admin@admin.com',
+'complaint_email'=>'sxbaoguosi@163.com',
 
 //投诉邮箱[<span class="hotspot" onmouseover="tooltip.show('填写投诉邮箱！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
 
-'postcode'=>'136000',
+'postcode'=>'045100',
 
 //邮政编码[<span class="hotspot" onmouseover="tooltip.show('填写邮政编码！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]
 
@@ -328,7 +328,7 @@
 //后台登录IP验证开关[<span class="hotspot" onmouseover="tooltip.show('打开或者关闭IP验证功能');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]=>0/关/1/开
 
 
-'verifycode'=>'1', 
+'verifycode'=>'0', 
 
 //验证码开关[<span class="hotspot" onmouseover="tooltip.show('设置网站是否启用验证码！');" onmouseout="tooltip.hide();"><img src="./images/admin/remind.gif" alt="" width="14" height="20" style="margin-left:10px; margin-right:5px;" /></span>]=>0/关/1/字符/2/拼图
 

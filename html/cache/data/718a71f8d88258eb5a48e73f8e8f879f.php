@@ -352,7 +352,7 @@
     'tag' => '',
     'username' => 'cmseasy',
     'userid' => '127',
-    'view' => '1',
+    'view' => '2',
     'color' => '',
     'strong' => '0',
     'toppost' => '0',
