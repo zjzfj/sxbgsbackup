@@ -1,0 +1,8 @@
+{loop plugins::categoryinfo($_catid) $c}
+<div class="title">
+<h3><a href="{$c[url]}">{$c[catname]}<small>{$c[subtitle]}</small></a></h3>
+<p>{$c[description]}</p>
+<span>——</span>
+</div>
+{/loop}
+
