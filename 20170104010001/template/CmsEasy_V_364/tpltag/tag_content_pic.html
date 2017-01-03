@@ -1,0 +1,32 @@
+
+
+
+
+{loop archive($_catid,$_typeid,$_spid,$_area,$_length,$_ordertype,$_limit,$_image,$_attr1,$_son,$_wheretype,$_tpl,$_intro_len,$_istop) $i $archive}
+			<div id="myTab_Content{=$i+0}" {if $i!==0}class="none"{/if}>
+				<div class="section2-1">	
+					<img src="{$archive['my_datuxianshi']}" onerror='this.src="{config::get('onerror_pic')}"' />
+				</div>
+				<div class="section2-2">	
+					<dl>
+						<dt>{lang(congyilvli)}</dt>
+						<dd>{$archive['my_congyijianli']}</dd>
+					</dl>
+					<dl>
+						<dt>{lang(zhuanjiashanchang)}</dt>
+						<dd>{$archive['my_zhuanjiasanchang']}</dd>
+					</dl>
+				</div>
+			</div>
+{/loop}
+
+
+
+
+		<div class="TabTitle section2-3">
+			<ul id="myTab">
+				{loop archive($_catid,$_typeid,$_spid,$_area,$_length,$_ordertype,$_limit,$_image,$_attr1,$_son,$_wheretype,$_tpl,$_intro_len,$_istop) $i $archive}
+				<li class="{if $i==0}active{else}normal{/if}" onmouseover="nTabs(this,{=$i+0});"><a class="img-auto"href="{$archive['url']}" target="_blank"><img alt="{$archive['stitle']}" src="{$archive['thumb']}" onerror='this.src="{config::get('onerror_pic')}"' /></a><p><a href="{$archive['url']}" style="color:{$arc[color]};" target="_blank" >{$archive['title']}</a></p></li>
+				{/loop}
+			</ul>
+		</div>
