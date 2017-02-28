@@ -1,0 +1,16 @@
+{loop plugins::categoryinfo($_catid) $c}
+
+
+
+<div class="section1-1-1">
+	<a href="{$c[url]}"><img src="{$c[image]}" /></a>
+</div>
+<div class="section1-1-2">
+	{cut(strip_tags($c['categorycontent']),300)}
+</div>
+<div class="section1-1-3">
+	<a href="{$c[url]}">[{lang(more)}]</a>
+</div>
+
+{/loop}
+
