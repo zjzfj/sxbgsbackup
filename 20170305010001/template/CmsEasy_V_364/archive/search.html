@@ -1,0 +1,55 @@
+{template 'header.html'}
+
+
+
+	<div class="box2">
+		<div class="box2-left">
+			{template 'left.html'}
+		</div>
+		<div class="box2-right">
+			<div class="title20">
+				<h5>{lang(search)}</h5><span>search</span>
+				{template 'position.html'}
+			</div>
+			<div class="box2-content">
+
+
+<h1><span style="color:red;font-weight:bold;"> “{$keyword}” </span>{lang(searchresults)}：</h1>
+<div class="blank30"></div>
+<ul class="list_page_1">
+{loop $articles $article}
+{cb_data($article)}
+<li>
+<div class="list_page_date">
+<h1>{=sdate($article[adddate],'d')}</h1>
+<p>{=sdate($article[adddate],'Y-m')}</p>
+</div>
+<div class="li_text">
+<p><a title="{$article[stitle]}" href="{$article[url]}" target="_blank" class="list_page_t"><?php if($keyword) echo str_replace($keyword,"<font style=color:red;font-weight:bold;>$keyword</font>",$article['title']); else { ?>{$article[title]}<?php } ?></a></p>
+<p>{cut(strip_tags($article['introduce']),60)}… <a href="{$article[url]}" target="_blank">[{lang(more)}]</a></p>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</li>
+{/loop}
+</ul>
+<!-- 列表结束 -->
+<!-- 内容列表分页开始 -->
+<div class="blank30"></div>
+<div class="pages">
+<?php echo pagination::html($record_count,5); ?>
+</div>
+<!-- 内容列表分页结束 -->
+
+
+
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+
+
+
+
+{template 'footer.html'}

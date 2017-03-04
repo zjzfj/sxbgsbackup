@@ -1,0 +1,174 @@
+{template 'header.html'}
+
+
+
+	<div class="box2">
+		<div class="box2-left">
+			{template 'left.html'}
+		</div>
+		<div class="box2-right">
+			<div class="title20">
+				<h5>{$category[$catid][catname]}</h5><span>{$category[$catid][htmldir]}</span>
+				{template 'position.html'}
+			</div>
+			<div class="box2-content">
+
+			
+			<div class="title21">{$archive[title]}</div>
+			<div class="title22">{lang(author)}：<a>{$archive[author]}</a>&nbsp;&nbsp; {lang(adddate)}：{$archive[adddate]}&nbsp;&nbsp; {lang(view)}：{view_js($archive[aid])}{if $archive[attr3]}&nbsp;&nbsp; {lang(source)}：{$archive[attr3]}{/if}</div>
+			<div id="content_text">
+			{$archive[content]}
+			</div>
+			
+
+<div class="blank30"></div>
+
+
+{if $archive[attr2]}
+<!-- 价格 -->
+<div class="blank10"></div>
+{lang(productprice)}： {$archive[attr2]}
+{/if}
+
+{if $archive[tag]}
+<!-- tag -->
+<div class="blank10"></div>
+{lang(tag)}： {$archive[tag]}
+{/if}
+
+{if $archive[special]}
+<!-- 专题 -->
+<div class="blank10"></div>
+{lang(special)}： {$archive[special]}
+{/if}
+
+
+{if $archive[type]}
+<!-- 分类 -->
+<div class="blank10"></div>
+{lang(type)}： {$archive[type]}
+{/if}
+
+
+{if $archive[area]}
+<!-- 地区 -->
+<div class="blank10"></div>
+{lang(area)}： {$archive[area]}
+{/if}
+
+<div class="blank30"></div>
+{if $pages>1}
+<!-- 内页分页 -->
+<div class="blank10"></div>
+<div class="pages">
+{archive_pagination($archive)}
+</div>
+<div class="blank30"></div>
+{/if}
+
+
+<!--自动调用自定义字段-->
+{$archive['my_fields']}
+
+<div class="blank20"></div>
+
+
+<?php if(archive_attachment($archive['aid'],'id')) { ?>
+<!-- 附件 -->
+<p>
+{lang(attachment)}：{attachment_js($archive['aid'])}
+</p>
+<?php } ?>
+<div class="blank30"></div>
+</div>
+
+<?php if(hasflash()) { ?>
+<div style="color:red;font-size:16px;"><?php echo showflash(); ?></div><?php } ?>
+
+<!-- 投票 -->
+{vote_js($archive[aid])}
+
+
+<div class="w_set">
+
+<!-- 自定义表单开始 -->
+{if $archive['showform']}
+{template 'myform/nrform.html'}
+{/if}
+<!-- 自定义表单结束 -->
+
+
+
+<div class="blank60"></div>
+
+
+
+<!-- 上下页开始 -->
+<div id="page">
+{if $archive['p']['aid']}
+<strong>{lang(archivep)}</strong><a href="{$archive['p']['url']}">{$archive['p']['title']}</a>
+{else}
+<strong>{lang(archivep)}</strong>{lang(nopage)}	
+{/if}
+<div class="blank10"></div>
+{if $archive['n']['aid']}
+ <strong>{lang(archiven)}</strong><a href="{$archive['n']['url']}">{$archive['n']['title']}</a>
+{else}
+<strong>{lang(archiven)}</strong>{lang(nopage)}	
+{/if}
+</div>
+<!-- 上下页结束 -->
+</div>
+
+
+
+<!-- 相关文章开始 -->
+{if is_array($likenews)}
+<div class="blank60"></div>
+<!-- 页面标题开始 -->
+<div class="c_h1">
+<div>
+<h1>{$archive[tag]}</h1>
+<p class="t_tools1">{lang(relatedcontent)}</p>
+</div>
+</div>
+
+<div class="w_set">
+<ul class="list_page_1">
+<!-- 内容列表开始 -->
+{loop $likenews $item}
+<li>
+<div class="list_page_date">
+<h1>{=sdate($archive[adddate],'d')}</h1>
+<p>{=sdate($archive[adddate],'Y-m')}</p>
+</div>
+<div class="li_text_w">
+<p><a title="{$archive[stitle]}" href="{archive::url($item)}" target="_blank" class="list_page_t">{cut($item['title'],20)}</a></p>
+<p>{cut(strip_tags($archive['introduce']),140)}… <a href="{archive::url($item)}" target="_blank">[{lang(more)}]</a></p>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</li>
+{/loop}
+<!-- 内容列表结束 -->
+</ul>
+{/if}
+<!-- 相关文章结束 -->
+<div class="blank30"></div>
+<!-- 评论框开始 -->
+{template 'comment/comment.html'}
+<!-- 评论框结束 -->
+<div class="clear"></div>
+
+
+
+
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+
+
+
+{template 'footer.html'}

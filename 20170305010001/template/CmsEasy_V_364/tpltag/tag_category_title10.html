@@ -1,0 +1,4 @@
+{loop plugins::categoryinfo($_catid) $cat}
+<a class="more" href="{$cat[url]}">{lang(more)}</a>
+<h5><a href="{$cat[url]}">【{$cat[catname]}】</a></h5>
+{/loop}
