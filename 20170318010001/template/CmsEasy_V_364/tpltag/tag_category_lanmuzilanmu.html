@@ -1,0 +1,15 @@
+
+
+{loop plugins::categoryinfo($_catid) $c}
+<h5><a href="{$c[url]}">{$c[catname]}</a></h5>
+{/loop}
+
+<ul>
+{loop categories($_catid) $i $t1}  
+{if $i==4}
+</ul>
+<ul>
+{/if}
+<li><a href="{$t1[url]}" title="{$t1[catname]}">{$t1[catname]}</a></li>
+{/loop}
+</ul>
