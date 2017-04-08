@@ -1,0 +1,63 @@
+{template 'header.html'}
+
+
+
+	<div class="box2">
+		<div class="box2-left">
+			{template 'left.html'}
+		</div>
+		<div class="box2-right">
+			<div class="title20">
+				<h5>{lang(area)}</h5><span>area</span>
+				{template 'position.html'}
+			</div>
+			<div class="box2-content">
+
+
+<ul class="list_page_1">
+
+<!-- 内容列表开始 -->
+{loop $archives $i $archive}
+<li>
+<div class="list_page_date">
+<h1>{=sdate($archive[adddate],'d')}</h1>
+<p>{=sdate($archive[adddate],'Y-m')}</p>
+</div>
+<div class="li_text">
+<p><a title="{$archive[stitle]}" href="{$archive[url]}" target="_blank" class="list_page_t">{$archive[title]}</a></p>
+<p>{cut(strip_tags($archive['introduce']),60)}… <a href="{$archive[url]}" target="_blank">[{lang(more)}]</a></p>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</li>
+{/loop}
+<!-- 内容列表结束 -->
+</ul>
+
+<div class="blank30"></div>
+
+
+<!-- 内容列表分页开始 -->
+{if isset($pages)}
+<div class="blank30"></div>
+{category_pagination($catid)}
+<div class="blank30"></div>
+{/if}
+<!-- 内容列表分页结束 -->
+
+
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+{template 'footer.html'}
