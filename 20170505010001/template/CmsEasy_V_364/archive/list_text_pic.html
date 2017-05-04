@@ -1,0 +1,58 @@
+{template 'header.html'}
+
+
+
+	<div class="box2">
+		<div class="box2-left">
+			{template 'left.html'}
+		</div>
+		<div class="box2-right">
+			<div class="title20">
+				<h5>{$category[$catid][catname]}</h5><span>{$category[$catid][htmldir]}</span>
+				{template 'position.html'}
+			</div>
+
+			<div class="right-pic2">
+				{loop $archives $i $archive}
+				<div class="right-pic2-1">
+					<div class="right-pic2-1l">
+						<a class="img-auto" target="_blank" href="{$archive['url']}"><img alt="{$archive[stitle]}" src="{$archive[thumb]}" onerror='this.src="{config::get('onerror_pic')}"' /></a>
+						<h5><a title="{$archive[stitle]}" href="{$archive[url]}" target="_blank" >{$archive[title]}</a></h5>
+						<p><a href="{url('guestbook')}">{lang(yuyueliuyan)}</a><a title="{$archive[stitle]}" href="{$archive[url]}" target="_blank" >{lang(more)}</a></p>
+					</div>
+					<div class="right-pic2-1r">
+						<dl>
+							<dt> {lang(弘法经历)}</dt>
+							<dd>{$archive['my_congyijianli']}</dd>
+						</dl>
+						<dl>
+							<dt>{lang(社会承担)}</dt>
+							<dd>{$archive['my_zhuanjiasanchang']}</dd>
+						</dl>
+					</div>
+					<div class="clear"></div>
+				</div><!-- /right-pic2-1 -->
+				{/loop}
+			</div>
+
+
+
+<!-- 内容列表分页开始 -->
+{if isset($pages)}
+<div class="blank30"></div>
+{category_pagination($catid)}
+{/if}
+<!-- 内容列表分页结束 -->
+			
+
+
+
+
+		</div>
+		<div class="clear"></div>
+	</div>
+
+
+
+
+{template 'footer.html'}
