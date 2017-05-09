@@ -1,0 +1,70 @@
+{template 'header.html'}
+
+
+
+	<div class="box2">
+		<div class="box2-left">
+			{template 'left.html'}
+		</div>
+		<div class="box2-right">
+			<div class="title20">
+				<h5>{$special[title]}</h5><span>Specia</span>
+				{template 'position.html'}
+			</div>
+			<div class="box2-content">
+
+
+			<div id="content_text">
+			<!-- 专题图片 -->
+			<img src="{$special[banner]}" onerror='this.src="{config::get('onerror_pic')}"' style="float:left;margin:0px 20px 20px 0px;" />
+			<!-- 专题介绍 -->
+			{$special[description]}
+			</div>
+			<div class="blank30"></div>
+<div class="blank30"></div>
+
+<!-- 内容列表开始 -->
+<ul class="list_page_1">
+{loop $archives $i $sp}
+<li>
+<div class="list_page_date">
+<h1>{=sdate($sp[adddate],'d')}</h1>
+<p>{=sdate($sp[adddate],'Y-m')}</p>
+</div>
+<div class="li_text">
+<p><a title="{$sp[stitle]}" href="{$sp[url]}" target="_blank" class="list_page_t">{$sp[title]}</a></p>
+<p>{cut(strip_tags($sp['introduce']),60)}… <a href="{$sp[url]}" target="_blank">[{lang(more)}]</a></p>
+<div class="clear"></div>
+</div>
+<div class="clear"></div>
+</li>
+{/loop}
+</ul>
+<!-- 内容列表结束 -->
+
+<div class="blank30"></div>
+
+<!-- 列表分页开始 -->
+{if isset($pages)}
+<div class="blank30"></div>
+{special::pagination($tag)}
+<div class="blank30"></div>
+{/if}
+<!-- 列表分页结束 -->
+
+			
+
+
+
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+
+
+
+<!-- 限定图片宽度 -->
+{template 'width_max.html'}
+<!-- 限定图片宽度 -->
+{template 'footer.html'}
