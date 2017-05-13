@@ -1,0 +1,6 @@
+{loop archive($_catid,$_typeid,$_spid,$_area,$_length,$_ordertype,$_limit,$_image,$_attr1,$_son,$_wheretype,$_tpl,$_intro_len,$_istop) $i $archive}
+
+
+<li{if $i%3==0} style="margin-left:0;"{/if}><a class="img-auto" href="{$archive['url']}" target="_blank"><img alt="{$archive['stitle']}" src="{$archive['thumb']}" onerror='this.src="{config::get('onerror_pic')}"' /></a><p><a href="{$archive['url']}" style="color:{$arc[color]};" target="_blank" >{$archive['title']}</a></p></li>
+
+{/loop}
