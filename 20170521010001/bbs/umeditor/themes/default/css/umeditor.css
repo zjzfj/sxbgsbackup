@@ -1,0 +1,329 @@
+.edui-container{
+    position: relative;
+    border: 1px solid #d4d4d4;
+    box-shadow: 2px 2px 5px #d3d6da;
+    background-color: #fff;
+}
+.edui-container .edui-toolbar{
+    position: relative;
+    width:auto;
+    border-bottom: 1px solid #e1e1e1;
+    box-shadow: 2px 2px 5px #d3d6da;
+    background-color: #fafafa;
+    z-index: 99999;
+}
+.edui-toolbar .edui-btn-toolbar{
+    position: relative;
+    padding: 5px;
+}
+.edui-container .edui-editor-body{
+    background-color: #fff;
+}
+.edui-editor-body .edui-body-container{
+}
+
+.edui-editor-body .edui-body-container p{margin:5px 0;}
+.edui-editor-body .edui-body-container{
+    border:0;
+    outline:none;
+    cursor:text;
+    padding:0 10px 0;
+    overflow:auto;
+    display:block;
+    word-wrap:break-word;
+    font-size:16px;
+    font-family:sans-serif;
+}
+.edui-editor-body.focus{border:1px solid #5c9dff}
+.edui-editor-body table{margin:10px 0 10px;border-collapse:collapse;display:table;}
+.edui-editor-body td{padding: 5px 10px;border: 1px solid #DDD;}
+.edui-editor-body iframe.mathquill-embedded-latex{
+    border: 0px;
+    padding: 0px;
+    display: inline;
+    margin: 0px;
+    background: none;
+    vertical-align: middle;
+    width: 0px;
+    height: 0px;
+}
+/*普通按钮*/
+.edui-btn-toolbar .edui-btn{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;
+    *zoom:1;
+    width:auto;
+    margin: 0 1px;
+    padding:1px;
+    border:none;
+    background: none;
+}
+.edui-btn-toolbar .edui-btn .edui-icon{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    padding:0;
+    background-repeat: no-repeat;
+    background-image: url(../images/icons.png);
+    background-image: url(../images/icons.gif) \9;
+}
+
+/*状态反射*/
+.edui-btn-toolbar .edui-btn.edui-hover,
+.edui-btn-toolbar .edui-btn.edui-active{
+    background-color: #d5e1f2;
+    padding: 0;
+    border: 1px solid #a3bde3;
+    _z-index: 1;
+}
+.edui-btn-toolbar .edui-btn.edui-disabled{
+    opacity: 0.3;
+    filter: alpha(opacity = 30);
+}
+.edui-btn-toolbar .edui-btn .edui-icon-source {
+    background-position:-260px -0px;
+}
+.edui-btn-toolbar .edui-btn .edui-icon-undo {
+    background-position: -160px 0;
+}
+.edui-btn-toolbar .edui-btn .edui-icon-redo {
+    background-position: -100px 0;
+}
+.edui-btn-toolbar  .edui-btn .edui-icon-bold{
+    background-position: 0 0;
+}
+.edui-btn-toolbar  .edui-btn .edui-icon-italic {
+    background-position: -60px 0;
+}
+.edui-btn-toolbar  .edui-btn .edui-icon-underline  {
+    background-position: -140px 0
+}
+.edui-btn-toolbar .edui-btn .edui-icon-strikethrough {
+    background-position: -120px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-superscript {
+    background-position: -620px 0;
+}
+.edui-btn-toolbar .edui-btn .edui-icon-subscript {
+    background-position:  -600px 0;
+}
+.edui-btn-toolbar .edui-btn .edui-icon-font, .edui-btn-toolbar .edui-btn .edui-icon-forecolor {
+    background-position: -720px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-backcolor {
+    background-position: -760px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-insertorderedlist {
+    background-position: -80px 0;
+}
+.edui-btn-toolbar .edui-btn .edui-icon-insertunorderedlist {
+    background-position:   -20px 0;
+}
+.edui-btn-toolbar .edui-btn .edui-icon-selectall {
+    background-position: -400px -20px;
+}
+.edui-btn-toolbar .edui-btn .edui-icon-cleardoc {
+    background-position: -520px 0;
+}
+.edui-btn-toolbar .edui-btn .edui-icon-paragraph {
+    background-position: -140px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-fontfamily {
+    background-position: -140px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-fontsize {
+    background-position: -140px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-justifyleft {
+    background-position: -460px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-justifycenter {
+    background-position: -420px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-justifyright {
+    background-position:-480px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-justifyjustify {
+    background-position: -440px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-link {
+    background-position: -500px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-unlink {
+    background-position: -640px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-image {
+    background-position: -380px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-emotion {
+    background-position: -60px -20px;
+}
+.edui-btn-toolbar .edui-btn .edui-icon-video {
+    background-position: -320px -20px;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-map {
+    background-position:  -40px -40px;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-gmap {
+    background-position:  -260px -40px;
+}
+.edui-btn-toolbar .edui-btn .edui-icon-horizontal {
+    background-position: -360px 0;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-print {
+    background-position: -440px -20px;
+}
+.edui-btn-toolbar .edui-btn .edui-icon-preview {
+    background-position: -420px -20px;
+}
+
+.edui-btn-toolbar .edui-btn-fullscreen{
+    float:right;
+}
+.edui-btn-toolbar .edui-btn .edui-icon-fullscreen {
+    background-position: -100px -20px;
+}
+
+.edui-btn-toolbar .edui-btn .edui-icon-removeformat {
+    background-position: -580px 0;
+}
+.edui-btn-toolbar .edui-btn .edui-icon-drafts {
+    background-position: -560px 0;
+}
+.edui-btn-toolbar .edui-btn .edui-icon-formula {
+    background-position: -80px -20px;
+}
+.edui-btn-toolbar .edui-splitbutton{
+    position: relative;
+    display: inline-block ;
+    vertical-align: top;
+    *display: inline ;
+    *zoom:1;
+    margin:0 2px;
+}
+.edui-splitbutton .edui-btn{
+    margin: 0;
+}
+.edui-splitbutton .edui-caret{
+    position: relative;
+    display: inline-block ;
+    vertical-align: top;
+    *display: inline ;
+    *zoom:1;
+    width: 8px;
+    height: 20px;
+    background: url(../images/icons.png) -741px 0;
+    _background: url(../images/icons.gif) -741px 0;
+}
+
+.edui-btn-toolbar .edui-splitbutton,
+.edui-btn-toolbar .edui-splitbutton{
+    _border: none;
+}
+
+/*状态反射*/
+.edui-btn-toolbar .edui-splitbutton.edui-hover .edui-btn{
+    background-color: #d5e1f2;
+}
+
+.edui-btn-toolbar .edui-splitbutton.edui-disabled{
+    opacity: 0.3;
+    filter: alpha(opacity = 30);
+}
+.edui-btn-toolbar .edui-splitbutton.edui-disabled .edui-caret{
+    opacity: 0.3 \0;
+    filter: alpha(opacity = 30)\0;
+}
+
+
+.edui-btn-toolbar .edui-combobox{
+    border: 1px solid #CCC;
+    padding:0;
+    margin:0 2px;
+    line-height: 20px;
+}
+.edui-combobox .edui-button-label{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    *display: inline ;
+    *zoom:1;
+    width:60px;
+    height:20px;
+    line-height: 20px;
+    padding: 2px;
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+    cursor: default;
+}
+.edui-combobox  .edui-button-spacing{
+    position: relative;
+    display: inline-block ;
+    vertical-align: top;
+    *display: inline ;
+    *zoom:1;
+    height:20px;
+    margin: 0;
+    padding:0 3px;
+}
+.edui-combobox .edui-caret{
+    position: relative;
+    display: inline-block ;
+    vertical-align: top;
+    *display: inline ;
+    *zoom:1;
+    height:20px;
+    width: 12px;
+    margin: 0;
+    padding: 0;
+    background: url(../images/icons.png) -741px 0;
+    _background: url(../images/icons.gif) -741px 0;
+}
+.edui-btn-toolbar .edui-combobox.edui-disabled{
+    opacity: 0.2;
+    filter: alpha(opacity = 20);
+}
+.edui-btn-toolbar .edui-combobox.edui-disabled .edui-button-label,
+.edui-btn-toolbar .edui-combobox.edui-disabled .edui-caret{
+    opacity: 0.2 \0;
+    filter: alpha(opacity = 20)\0;
+}
+.edui-combobox-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding:5px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    box-shadow: 2px 2px 5px #d3d6da;
+    min-width: 160px;
+    _width: 160px;
+}
+
+.edui-combobox-menu .edui-combobox-item {
+    display: block;
+    border: 1p
