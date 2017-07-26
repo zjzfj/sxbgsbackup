@@ -1,0 +1,103 @@
+
+
+
+
+	<div class="blank20"></div>
+	<div class="blank20"></div>
+
+
+	<div class="foot-menu">
+		<div class="box">
+<!--
+			<span>{lang(quanguomianfeizixunrexian)} : {get(tel)}</span>
+-->
+			<span>客堂电话 : {get(tel)}</span>
+			<a class="{if $topid==0} on{/if}" href="{$base_url}/">{lang(homepage)}</a>
+			{loop categories_nav() $t}
+			<a class="{if isset($topid) && $topid==$t[catid]} on{/if}" href="{$t[url]}" target="{if config::get('nav_blank')==1} _blank{/if}">{$t[catname]}</a>
+			{/loop}
+		</div>
+	</div>
+
+	<div class="foot">
+		<div class="box">
+			<div class="foot-1">
+				<div class="foot-logo">
+					<a title="{get(sitename)}" href="{$base_url}/"><img src="{get('site_logo')}" alt="{get(sitename)}" width="{get(logo_width)}" /></a>
+				</div>
+			<!--	
+				<div class="foot-logo-bg">
+					<img src="{$skin_path}/images/base/logo-bg.png" width="175" height="44" alt="" />
+				</div>
+				<div class="foot-tel">
+					<h3>{lang(ershisixiaoshikefudianhua)}</h3>
+					<p>{get(tel)}</p>
+				</div>
+			-->
+			</div>
+			<div class="foot-2">
+				<div class="foot-weixin">
+					<img src="{get(weixin_pic)}"  />
+				</div>
+				<dl>
+					<dt>{lang(laifangdizhi)}</dt>
+					<dd>{get(address)}</dd>
+				</dl>
+				<dl>
+					<dt>{lang(wangshangyuyue)}</dt>
+					<dd>{lang(zixunqq)} : {get(qq1)}</dd>
+				</dl>
+				<dl>
+					<dd>{get('sitename')}  {get(site_right)}  {get('site_icp')}  
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261190376'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1261190376%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+</dd>
+				</dl>
+			</div>
+			<div class="foot-3">
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!-- 在线客服 -->
+{template 'system/servers.html'}
+<![endif]-->
+<!-- 短信 -->
+{template 'system/sms.html'}
+
+<script type="text/javascript" src="{$base_url}/js/common.js"></script>
+
+{if get('share')=='1'}
+<!-- Baidu Button BEGIN -->
+<script type="text/javascript" id="bdshare_js" data="type=slide&img=6&pos=right&uid=620555" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+		var bds_config = {"bdTop":150};
+		document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?t=" + new Date().getHours();
+</script>
+<!-- Baidu Button END -->
+{/if}
+
+
+{if config::get('site_push')=='1'}
+<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+{/if}
+
+</body>
+</html>
