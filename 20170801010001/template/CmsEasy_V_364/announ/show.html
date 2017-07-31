@@ -1,0 +1,47 @@
+{template 'header.html'}
+
+
+
+	<div class="box2">
+		<div class="box2-left">
+			{template 'left.html'}
+		</div>
+		<div class="box2-right">
+			<div class="title20">
+				<h5>{$category[$catid][catname]}</h5><span>{$category[$catid][htmldir]}</span>
+				{template 'position.html'}
+			</div>
+			<div class="box2-content">
+
+
+			<div class="title21">{$announ[title]}</div>
+			<div class="title22">{lang(adddate)}：{$announ[adddate]}</div>
+<!-- 正文 -->
+<div id="content_text">
+{$announ[content]}
+</div>
+<!-- 分享开始 -->
+{if get('share')=='1'}
+<div class="blank30"></div>
+{template 'system/share.html'}
+{/if}
+
+
+
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+
+
+
+
+
+
+
+
+<!-- 限定图片宽度 -->
+{template 'width_max.html'}
+<!-- 限定图片宽度 -->
+{template 'footer.html'}
