@@ -1,0 +1,48 @@
+{template 'header.html'}
+
+
+
+	<div class="box2">
+		<div class="box2-left">
+			{template 'left.html'}
+		</div>
+		<div class="box2-right">
+
+
+{loop categories($catid) $i $t}
+<div class="title20">
+	<h5>{$t['catname']}</h5><span>{$t['htmldir']}</span>
+</div>
+
+
+<div class="right-pic1" style="padding-bottom:0;">
+	<ul>
+		{loop archive($t[catid],0,0,'0,0,0',20,'aid',3,false,0) $i $archive}
+		<li{if $i%3==0} style="margin-left:0;clear:left;"{/if}>
+			<a class="img-auto" title="{$archive['stitle']}" target="_blank" href="{$archive['url']}" ><img src="{$archive[thumb]}" onerror='this.src="{config::get('onerror_pic')}"' alt="{$archive['stitle']}" /></a>
+			<h5><a title="{$archive['stitle']}" target="_blank" href="{$archive['url']}" >【{$archive['title']}】</a></h5>
+			<p>{cut(strip_tags($archive['introduce']),90)}</p>
+			<a class="more" target="_blank" href="{$archive['url']}" >{lang(more)}</a>
+		</li>
+		{/loop}
+		<div class="clear"></div>
+	</ul>
+</div>
+
+
+
+<!-- list_cp -->
+{/loop}
+
+
+
+
+		</div>
+		<div class="clear"></div>
+	</div>
+
+
+
+
+
+{template 'footer.html'}
